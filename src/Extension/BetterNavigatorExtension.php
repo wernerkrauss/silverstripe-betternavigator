@@ -9,7 +9,7 @@ use SilverStripe\Control\Director;
 use SilverStripe\Control\HTTPResponse;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Manifest\ModuleLoader;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Security\LogoutForm;
 use SilverStripe\Security\Member;
 use SilverStripe\Security\Permission;
@@ -18,7 +18,7 @@ use SilverStripe\Versioned\Versioned;
 use SilverStripe\View\ArrayData;
 use SilverStripe\ORM\FieldType\DBHTMLText;
 
-class BetterNavigatorExtension extends DataExtension
+class BetterNavigatorExtension extends Extension
 {
     private static $better_navigator_edit_permission = 'CMS_ACCESS_CMSMain';
     private static $better_navigator_edit_permission_mode = 'any';
